@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> sasta calculator</title>
+</head>
+
+<body>
+    <h1>Enter your choice</h1>
+    <ul>
+        <li>Add</li>
+        <li>Sub</li>
+        <li>Mult</li>
+        <li>Div
+        </li>
+    </ul>
+    <form>
+        <input type="text" name="5" id="choices">
+        <br>
+        <button onclick="myfunc()">Enter</button> </form>
+    <script type="text/javascript">
+        function myfunc() {
+            var choice = document.getElementById("choices").value;
+            alert(choice);
+            var a = 10;
+            var b = 5;
+            switch (choice) {
+                case "Add":
+                    var sum = a + b;
+                    document.write("The addition of two numbers is" + " " + sum);
+                    break;
+                case "Sub":
+                    var sub = a - b;
+                    document.write("The substraction of two numbers is" + " " + sub);
+                    break;
+                case "Mult":
+                    var mul = a * b;
+                    document.write("The addition of two numbers is" + " " + mul);
+                    break;
+                case "Div":
+                    var div = a / b;
+                    document.write("The addition of two numbers is" + " " + div);
+                    break;
+                default:
+                    alert("please  check again");
+
+            }
+        }
+    </script>
+</body>
+
+</html>
